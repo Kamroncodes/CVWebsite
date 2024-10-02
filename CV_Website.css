@@ -1,0 +1,264 @@
+/* Page */
+body {
+    background-color: whitesmoke;
+    
+}
+
+.box {
+    border-radius: 15px;
+    margin: 0.5rem auto;
+    max-width: 1260px;
+}
+
+.sec {
+    margin-bottom: 45px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h2 {
+    margin: 6px 15px 2px;
+}
+
+h3 , h4 {
+    margin: 2px 2px 0px 20px;
+}
+
+p {
+    margin: 3px 20px 10px;
+}
+
+/* Welcome */
+
+.welcome {
+    display: flex;
+    max-height: 700px;
+}
+
+.welcome img{
+    z-index: -1;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.welcome h1 , .welcome h3 {
+    position: absolute;
+    color: whitesmoke
+}
+
+.welcome h1 {
+    font-size: 46px;
+    margin-left: 9%;
+    margin-top: 7%;
+    border-radius: 3px;
+    box-shadow: 0px 2px 0px rgba(185, 190, 192, 0.5);
+}
+
+.welcome h3 {
+    font-size: 24px;
+    margin-left: 12%;
+    margin-top: 14%;
+    line-height: 1.75rem;
+}
+
+/* Intro */
+
+.glance {
+    display: flex;
+    justify-content: center;
+    background-image: url(../CV_Website/TieBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* background-color: rgba(133, 192, 243, 0.7); */
+    max-height: 18rem;
+}
+
+.glance img{
+    border-radius: 15px;
+    margin: 0px 10px 0px 0px;
+    max-height: inherit;
+    align-self: center;
+  }
+
+.glance h2{
+    margin: 4px 10px 0px 30px;
+    font-size: 34px;
+  }
+
+.summarytitle h3{
+    align-self: last baseline;
+    margin: 0px 0px 5px;
+  }
+
+.summarytitle {
+    display: flex;
+}
+
+.summary {
+    align-content: center;
+}
+
+.box.glancelist p {
+    margin: 0px 2px 4px 24px;
+}
+
+.glancelist {
+    height:fit-content;
+    margin: 14px 0px 5px 5px;
+    background-color: whitesmoke;
+}
+
+
+/* Experience */
+
+.experience {
+   background-image: url(../CV_Website/stone-texture-background_632498-971.jpg);
+}
+
+.experience h2{
+   padding-top: 12px;
+   margin-bottom: 10px;
+   font-size: 34px;
+}
+
+.employer{
+    margin-bottom: 4px;
+    border-bottom: 0.5px solid gainsboro;
+    margin-right: 325px;
+}
+
+.jobtextlogo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobtextlogo img{
+    width: 10%;
+    object-fit: contain;
+    margin: 0% 2% 2.25% 0.25%;
+}
+
+#franklinlogo {
+    max-height: 100px;
+    margin-right: 2.5%;
+    margin-bottom: 8px;
+    margin-top: -20px;
+}
+
+#upbeatlogo {
+    margin-bottom: 0.5%;
+    margin-top: -10px;
+}
+
+.jobtitletime {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobtime {
+    margin-right: 3%;
+    font-weight: bold;
+}
+
+.jobdetails {
+    line-height: 1.25rem;
+    margin: 0px 0px 8px 35px;
+}
+
+.jobdetails span {
+    transition: font-weight 1s ease-in-out;
+}
+
+.jobdetails:hover span{
+    font-weight: bold;
+}
+
+
+/* Education */
+
+.education {
+    background-image: url(../CV_Website/lightbulb.jpg);
+    background-position: 100%;
+}
+
+.education h2{
+    font-size: 34px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    padding-top: 12px;
+}
+
+.education h4{
+    font-size: 14px;
+}
+
+.education h4 , .education h3 , .education p {
+    margin-left: 8px;
+}
+
+.border {
+  height: 80px;
+  width: 3px;
+  margin-top: 10px;
+  margin-left: 15px;
+  background-color: rgb(206 180 74);
+}
+
+.border2 {
+    height: 118px;
+    width: 3px;
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color: rgb(206 180 74);
+}
+
+.border3 {
+    height: 120px;
+    width: 3px;
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color: rgb(206 180 74);
+}
+
+.border4 {
+    height: 82px;
+    width: 3px;
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color: rgb(206 180 74);
+}
+
+.teachinglicense , .psu , .tesl , .IBCert{
+    display: flex;
+}
+
+.degreetitle {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.degreeinst {
+    font-size: 18px;
+}
+
+/* Skills and Interests */
+
+.skills {
+    display: grid;
+    max-height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.coding , .sports , .threeD {
+    width: 96%;
+    display: grid;
+    max-height: fit-content;
+}
+
+#lamppic {
+    max-height: 250px;
+    height: 50%;
+    justify-self: center;
+    align-self: center;
+}
+

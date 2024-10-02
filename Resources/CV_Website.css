@@ -66,7 +66,7 @@ p {
 .glance {
     display: flex;
     justify-content: center;
-    background-image: url(../CV_Website/TieBackground.png);
+    background-image: url(../Resources/TieBackground.png);
     background-size: cover;
     background-repeat: no-repeat;
    /* background-color: rgba(133, 192, 243, 0.7); */
@@ -112,7 +112,7 @@ p {
 /* Experience */
 
 .experience {
-   background-image: url(../CV_Website/stone-texture-background_632498-971.jpg);
+   background-image: url(../Resources/stone-texture-background_632498-971.jpg);
 }
 
 .experience h2{
@@ -177,7 +177,7 @@ p {
 /* Education */
 
 .education {
-    background-image: url(../CV_Website/lightbulb.jpg);
+    background-image: url(../Resources/lightbulb.jpg);
     background-position: 100%;
 }
 

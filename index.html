@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Website</title>
     <link rel="stylesheet" type="text/css" href="https://1837TR.github.io/CVWebsite/Resources/CV_Website.css">
+  <!-- move this during deployment href="../CV_Website/Resources/CV_Website.css" -->
   </head>
   <body>
+  <nav>
+    <div class="navbar">
+      <h2><a href="#top">Kamron</a></h2>
+      <h2><a href="#Summary">Summary</a></h2>
+      <h2><a href="#Experience">Experience</a></h2>
+      <h2><a href="#Education">Education</a></h2>
+    </div>
+  </nav>
   <div class="box sec welcome">
-    <img src="https://1837TR.github.io/CVWebsite/Resources/GrowingBookedit.png">
+    <img class="welcomepic" src="https://1837TR.github.io/CVWebsite/Resources/ResumePicExpand.png">
     <h1>Kamron Taber</h1>
     <h3>Student Centered Educator<br>Licensed<br>IB, Cambridge and <br>Curriculum Design Experience<br>Native English Speaker<br>Bachelor's Degree<br>US Passport</h3>
   </div>
-  <div class="box sec glance">
-    <img src="https://1837TR.github.io/CVWebsite/Resources/Resume Picture.jpg" alt="A professional photograph of Kamron Taber">
+  <div class="box sec glance" id="Summary">
         <div class="summary">
           <div class="summarytitle">
-            <h2>Experience</h2>
-            <h3>(At a Glance)</h3>
+            <h2>Summary</h2>
           </div>
             <div class="box glancelist">
                <h3>Age Groups</h3>
@@ -31,7 +38,7 @@
               </div>
           </div>
   </div>
-  <div class="box sec experience">
+  <div class="box sec experience" id="Experience">
     <h2>Professional Experience</h2>
     <div class="assumption">
      <div class="jobtitletime">
@@ -95,7 +102,7 @@
     </div>
    </div>
  </div>
- <div class="box sec education">
+ <div class="box sec education" id="Education">
   <h2>Education</h2>
   <div class="teachinglicense">
    <div class="border"></div>

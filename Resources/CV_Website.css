@@ -1,11 +1,10 @@
 /* Page */
 body {
-    background-color: whitesmoke;  
+    background-color: rgba(0, 0, 0, 0.76);  
     position: relative;
 }
 
 .box {
-    border-radius: 15px;
     margin: 0.5rem auto;
     max-width: 1260px;
 }
@@ -34,19 +33,16 @@ p {
   left: 0px;
   top: 25px;
   font-size: 14px;
-  background-color: grey;
+  background-color: gainsboro;
   z-index: 2;
-  border-radius: 0px 10px 10px 0px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .navbar h2 {
     margin-bottom: 10px;
     margin-right: 5px;
     border: 1px solid gainsboro;
-    border-radius: 5px;
-    background-color: gainsboro;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: white;
+    box-shadow: -3px 3px black;
 }
 
 .navbar h2:hover {
@@ -74,70 +70,69 @@ p {
 /* Welcome */
 
 .welcome {
-    display: grid;
-    position: relative;
-    max-height: 700px;
-    justify-content: center;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    
 }
 
-.welcomepic {
-    width: 100%;
-    margin: 0px;
-    max-height: 700px;
-}
-
-.welcomepic img{
-    width: 100%;
-    border-radius: 15px;
-    margin: 0px;
-    height: 100%;
-  }
-
-  .summary {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    height: 100%;
-  }
-
-.summarytoptext {
-    position: absolute;
-    margin-top: 4%;
-    margin-left: 9%;
-    width: 45%;
-    line-height: 2rem;
-}
-
-.summary h1 {
+.welcome h1 {
     font-size: 52px;
-    box-shadow: 0px 2px 0px rgba(185, 190, 192, 0.5);
-    width: 330px;
-    margin-bottom: 25px;
+    margin: 4% 0% 2% 15%;
 }
 
-.summary h3 {
+.highlights h3 {
     font-size: 24px;
-    margin-left: 14%;
-    line-height: 1.75rem;
-    margin-top: 50px;
+    line-height: 2.5rem;
+    margin: 1% 15% 2% 16.5%;
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.76);
+    padding-left: 2%;
+    padding-bottom: 1%;
+    background-color: gainsboro;
 }
 
-.glancelist {
-    margin: 0px;
-    height: fit-content;
-    width: 58%;
-    bottom: 20px;
-    left: 20px;
-   position: absolute;
+.highlights {
+    padding-bottom: 2%;
 }
 
-.glancelist h3{
-    margin: 0px 0px 0px;
-    display: block;
-  }
+.resumepic {
+    align-content: flex-end;
+    margin-bottom: -4px;
+    
+}
 
-.box.glancelist p {
-    margin: 0px 2px 4px 24px;
+.resumepic img {
+    width: 100%;
+    
+}
+
+.summarytop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list {
+    border-top: 10px solid rgba(0, 0, 0, 0.76);
+    padding: 1.5% 2% 1.5% 10%;
+}
+
+.list h3 {
+    font-size: 22px;
+    margin: 2%;
+    padding-top: 1%;
+}
+
+.listgroup {
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.76);
+    width: 90%;
+    background-color: gainsboro;
+}
+
+.list p {
+    padding: 0% 0% 1% 0%;
+    margin: 2%;
+    font-size: 18px;
 }
 
 /* Experience */
@@ -147,15 +142,19 @@ p {
 }
 
 .experience h2{
-   padding-top: 12px;
+   padding-top: 2%;
+   padding-left: 3%;
    margin-bottom: 10px;
    font-size: 34px;
+   margin-left: 0px;
 }
 
 .employer{
     margin-bottom: 4px;
     border-bottom: 0.5px solid gainsboro;
     margin-right: 325px;
+    margin-left: 3%;
+    font-size: 22px;
 }
 
 .jobtextlogo {
@@ -186,6 +185,14 @@ p {
     justify-content: space-between;
 }
 
+.jobtitle {
+    margin-top: 2%;
+    margin-left: 3%;
+    font-size: 22px;
+}
+
+
+
 .jobtime {
     margin-right: 3%;
     font-weight: bold;
@@ -193,7 +200,9 @@ p {
 
 .jobdetails {
     line-height: 1.25rem;
-    margin: 0px 0px 8px 35px;
+    margin: 0% 2% 1% 3%;
+    padding: 0% 0% 1% 1%;
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.76);
 }
 
 .jobdetails span {
@@ -214,9 +223,11 @@ p {
 
 .education h2{
     font-size: 34px;
-    margin-top: 12px;
-    margin-bottom: 10px;
-    padding-top: 12px;
+    padding-top: 2%;
+   padding-left: 3%;
+   margin-bottom: 10px;
+   font-size: 34px;
+   margin-left: 0px;
 }
 
 .education h4{
@@ -296,63 +307,36 @@ p {
 
 @media only screen and (max-width: 1510px) {
   nav {
-    display: none;
+    top: 0px;
   }
+
+  .navbar {
+    top: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .navbar h2:hover {
+      font-size: 24px;
+      margin-left: 3%;
+  }
+
+  .welcome {
+    margin-top: 40px;
+  }
+
 }
 
 @media only screen and (max-width: 1120px) {
-    .summarytoptext {
-        margin-top: 1%;
-    }
-
     .education {
         background-image: url(../Resources/lightbulb.jpg);
         background-position: left;
     }
 
-    .summarytoptext h3 {
-        margin-top: 1%;
-        margin-bottom: 0;
-    }
-
-    .summarytoptext h1 {
-        margin-top: 0.5%;
-        margin-bottom: 0.5%;
-    }
 }   
 
-@media only screen and (max-width: 920px) {
-    .summary h3 {
-        font-size: 20px;
-        line-height: 120%;
-    }
-
-    .summary p {
-        line-height: 100%;
-        font-size: 14px;
-    }
-}
-
 @media only screen and (max-width: 756px) {
-    .summarytoptext h3 {
-       font-size: 18px;
-       line-height: 120%;
-       margin-top: 5%;
-    }
-
-    .summarytoptext h1 {
-        line-height: 3rem;
-        width: 200px;
-    }
-
-    .glancelist {
-        display: none;
-    }
-
-    .summarytoptext h1 {
-        font-size: 30px;
-    }
-
     .employer {
         margin-right: 150px;
     }
@@ -360,28 +344,24 @@ p {
     .jobtextlogo img {
         display: none;
     }
+}
 
 @media only screen and (max-width: 505px) {
-    h3 {
-        font-size: 14px;
+    h4 {
+        font-size: 16px;
     }
 
-    h4 {
-        font-size: 12px;
+    .welcome h3 {
+        font-size: 18px;
+    }
+
+    .jobtitle , .employer {
+        font-size: 18px;
     }
     
-    .summarytoptext h3 {
-        font-size: 14px;
-    }
 }
-@media only screen and (max-width: 390px) {
-    .summarytoptext h3 {
-        display: none;
-    }
 
-    .summarytoptext h1 {
-        width: 100px;
-    }
+@media only screen and (max-width: 390px) {
 
     .experience h2 {
         margin-left: 2px;

@@ -72,7 +72,6 @@ p {
 .welcome {
     background-color: whitesmoke;
     justify-content: space-between;
-    
 }
 
 .welcome h1 {
@@ -102,7 +101,6 @@ p {
 
 .resumepic img {
     width: 100%;
-    
 }
 
 .summarytop {
@@ -141,7 +139,7 @@ p {
    background-image: url(../Resources/stone-texture-background_632498-971.jpg);
 }
 
-.experience h2{
+.experience h2 {
    padding-top: 2%;
    padding-left: 3%;
    margin-bottom: 10px;
@@ -149,7 +147,7 @@ p {
    margin-left: 0px;
 }
 
-.employer{
+.employer {
     margin-bottom: 4px;
     border-bottom: 0.5px solid gainsboro;
     margin-right: 325px;
@@ -190,8 +188,6 @@ p {
     margin-left: 3%;
     font-size: 22px;
 }
-
-
 
 .jobtime {
     margin-right: 3%;

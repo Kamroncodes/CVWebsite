@@ -1,14 +1,13 @@
 /* Page */
 body {
-    background-color: whitesmoke;
-    
+    background-color: whitesmoke;  
+    position: relative;
 }
 
 .box {
     border-radius: 15px;
     margin: 0.5rem auto;
     max-width: 1260px;
-    border: 2px solid black;
 }
 
 .sec {
@@ -75,90 +74,71 @@ p {
 /* Welcome */
 
 .welcome {
-    display: flex;
+    display: grid;
+    position: relative;
     max-height: 700px;
+    justify-content: center;
 }
 
 .welcomepic {
-    z-index: -1;
+    width: 100%;
+    margin: 0px;
+    max-height: 700px;
+}
+
+.welcomepic img{
     width: 100%;
     border-radius: 15px;
-    object-fit: cover;
-}
+    margin: 0px;
+    height: 100%;
+  }
 
-.welcome h1 , .welcome h3 {
+  .summary {
     position: absolute;
-    color: whitesmoke
-}
+    width: 100%;
+    bottom: 0px;
+    height: 100%;
+  }
 
-
-#resumepic {
-    object-fit: contain;
-    border-radius: 15px;
+.summarytoptext {
     position: absolute;
-    margin-left: 60%;
-    margin-top: 9%;
-    max-height: 18rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.welcome h1 {
-    font-size: 46px;
+    margin-top: 4%;
     margin-left: 9%;
-    margin-top: 7%;
-    border-radius: 3px;
+    width: 45%;
+    line-height: 2rem;
+}
+
+.summary h1 {
+    font-size: 52px;
     box-shadow: 0px 2px 0px rgba(185, 190, 192, 0.5);
+    width: 330px;
+    margin-bottom: 25px;
 }
 
-.welcome h3 {
+.summary h3 {
     font-size: 24px;
-    margin-left: 12%;
-    margin-top: 14%;
+    margin-left: 14%;
     line-height: 1.75rem;
+    margin-top: 50px;
 }
 
-/* Intro */
-
-.glance {
-    display: flex;
-    justify-content: center;
-    background-image: url(../Resources/TieBackground.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-   /* background-color: rgba(133, 192, 243, 0.7); */
-    max-height: 18rem;
+.glancelist {
+    margin: 0px;
+    height: fit-content;
+    width: 58%;
+    bottom: 20px;
+    left: 20px;
+   position: absolute;
 }
 
-
-
-.glance h2{
-    margin: 4px 10px 0px 30px;
-    font-size: 34px;
+.glancelist h3{
+    margin: 0px 0px 0px;
+    display: block;
   }
-
-.summarytitle h3{
-    align-self: last baseline;
-    margin: 0px 0px 5px;
-  }
-
-.summarytitle {
-    display: flex;
-}
-
-.summary {
-    align-content: center;
-}
 
 .box.glancelist p {
     margin: 0px 2px 4px 24px;
 }
-
-.glancelist {
-    height:fit-content;
-    margin: 14px 0px 5px 5px;
-    background-color: whitesmoke;
-}
-
 
 /* Experience */
 
@@ -313,3 +293,107 @@ p {
     align-self: center;
 }
 
+
+@media only screen and (max-width: 1510px) {
+  nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+    .summarytoptext {
+        margin-top: 1%;
+    }
+
+    .education {
+        background-image: url(../Resources/lightbulb.jpg);
+        background-position: left;
+    }
+
+    .summarytoptext h3 {
+        margin-top: 1%;
+        margin-bottom: 0;
+    }
+
+    .summarytoptext h1 {
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+    }
+}   
+
+@media only screen and (max-width: 920px) {
+    .summary h3 {
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    .summary p {
+        line-height: 100%;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 756px) {
+    .summarytoptext h3 {
+       font-size: 18px;
+       line-height: 120%;
+       margin-top: 5%;
+    }
+
+    .summarytoptext h1 {
+        line-height: 3rem;
+        width: 200px;
+    }
+
+    .glancelist {
+        display: none;
+    }
+
+    .summarytoptext h1 {
+        font-size: 30px;
+    }
+
+    .employer {
+        margin-right: 150px;
+    }
+
+    .jobtextlogo img {
+        display: none;
+    }
+
+@media only screen and (max-width: 505px) {
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+    
+    .summarytoptext h3 {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .summarytoptext h3 {
+        display: none;
+    }
+
+    .summarytoptext h1 {
+        width: 100px;
+    }
+
+    .experience h2 {
+        margin-left: 2px;
+    }
+
+    .experience h3 {
+        margin-left: 5px;
+    }
+
+    .experience p {
+        margin-left: 10px;
+    }
+
+
+}

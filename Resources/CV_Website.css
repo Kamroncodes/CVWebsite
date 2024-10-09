@@ -1,375 +1,351 @@
-/* Page */
+/* font */
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+/* webpage */
+
 body {
-    background-color: rgba(0, 0, 0, 0.76);  
-    position: relative;
+  font-family: 'ubuntu', sans-serif;
+  background-color: whitesmoke;
+  width: 100vw;
+  margin: 0%;
+  padding: 0%;
 }
-
-.box {
-    margin: 0.5rem auto;
-    max-width: 1260px;
-}
-
-.sec {
-    margin-bottom: 45px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-h2 {
-    margin: 6px 15px 2px;
-}
-
-h3 , h4 {
-    margin: 2px 2px 0px 20px;
-}
-
-p {
-    margin: 3px 20px 10px;
-}
-
-/* Navbar */
 
 .navbar {
-  position: fixed;
-  left: 0px;
-  top: 25px;
-  font-size: 14px;
-  background-color: gainsboro;
-  z-index: 2;
+    display: none;
 }
 
-.navbar h2 {
-    margin-bottom: 10px;
-    margin-right: 5px;
-    border: 1px solid gainsboro;
-    background-color: white;
-    box-shadow: -3px 3px black;
-}
+/* top 2 sec */
 
-.navbar h2:hover {
-    margin-left: 5px;
-}
-
-.navbar a {
-    color: black;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    color: black;
-}
-
-.navbar a:link {
-    color: black;
-}
-
-.navbar a:visited {
-    color: black;
-}
-
-
-/* Welcome */
-
-.welcome {
-    background-color: whitesmoke;
-    justify-content: space-between;
-}
-
-.welcome h1 {
-    font-size: 52px;
-    margin: 4% 0% 2% 15%;
-}
-
-.highlights h3 {
-    font-size: 24px;
-    line-height: 2.5rem;
-    margin: 1% 15% 2% 16.5%;
-    box-shadow: -5px 5px rgba(0, 0, 0, 0.76);
-    padding-left: 2%;
-    padding-bottom: 1%;
-    background-color: gainsboro;
-}
-
-.highlights {
-    padding-bottom: 2%;
-}
-
-.resumepic {
-    align-content: flex-end;
-    margin-bottom: -4px;
-    
-}
-
-.resumepic img {
-    width: 100%;
-}
-
-.summarytop {
+.welcome { 
     display: flex;
+    width: 100vw;
+    flex-direction: column;
+    margin: 0%;
+}
+
+/* opening: summary & headshot */
+
+.welcometop , .welcomebottom{
     flex-direction: row;
+    display: flex;
     justify-content: space-around;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    width: 100vw;
+}
+
+.welcometop {
+    height: fit-content;
     align-items: center;
+    background-image: linear-gradient(to left, #5EA6CB, #477FB9);
 }
 
-.list {
-    border-top: 10px solid rgba(0, 0, 0, 0.76);
-    padding: 1.5% 2% 1.5% 10%;
+.name {
+    margin: 3% 8% 10% 13%;
+    padding: 1% 1% 1% 1.5%;
+    width: fit-content;
 }
 
-.list h3 {
-    font-size: 22px;
-    margin: 2%;
-    padding-top: 1%;
+.name h1{
+    margin: 0%;
+    background-color: rgba(0,0,0,0);
+    color: whitesmoke;
+    font-size: 72px;
 }
 
-.listgroup {
-    box-shadow: -5px 5px rgba(0, 0, 0, 0.76);
-    width: 90%;
-    background-color: gainsboro;
+.introbox h3 {
+    font-size: 24px;
+    margin: 0px;
 }
 
-.list p {
-    padding: 0% 0% 1% 0%;
-    margin: 2%;
+.introbox {
+    margin: 6% 8% 5% 13%;
+    padding: 0% 2% 2% 2%;
+    color: whitesmoke;
+    width: fit-content;
+}
+
+.headshot {
+    padding: 0%;
+    background-color: rgba(0,0,0,0);
+}
+
+.headshot img {
+    background-color: rgba(0,0,0,0);
+    margin-right: 10%;
+}
+
+/* sec 2: at a glance */
+
+.welcomebottom {
+    align-items: start;
+    height: fit-content;
+    margin-bottom: 5%;
+}
+
+.welcomemiddle {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.welcomebottom h3 {
+    font-size: 24px;
+}
+
+.welcomebottom p {
+    font-weight: bold;
     font-size: 18px;
 }
 
-/* Experience */
+.introbottom {
+    margin: 0% 1% 0% 1%;
+    padding: 1% 2% 0% 2%;
+    color: black;
+    width: 20vw;
+    line-height: 2rem;
+}
+
+.introbottom p{
+    font-size: 18px;
+    font-weight: 500;
+    word-spacing: 10px;
+}
+
+#invisible {
+    visibility: hidden
+}
+
+/* sec 3: experience */
 
 .experience {
-   background-image: url(../Resources/stone-texture-background_632498-971.jpg);
+    margin: 0% 3%;
 }
 
-.experience h2 {
-   padding-top: 2%;
-   padding-left: 3%;
-   margin-bottom: 10px;
-   font-size: 34px;
-   margin-left: 0px;
+.experiencetop , .experiencebottom {
+    display: flex; 
 }
 
-.employer {
-    margin-bottom: 4px;
-    border-bottom: 0.5px solid gainsboro;
-    margin-right: 325px;
-    margin-left: 3%;
-    font-size: 22px;
-}
-
-.jobtextlogo {
-    display: flex;
-    justify-content: space-between;
-}
-
-.jobtextlogo img{
-    width: 10%;
-    object-fit: contain;
-    margin: 0% 2% 2.25% 0.25%;
-}
-
-#franklinlogo {
-    max-height: 100px;
-    margin-right: 2.5%;
-    margin-bottom: 8px;
-    margin-top: -20px;
-}
-
-#upbeatlogo {
-    margin-bottom: 0.5%;
-    margin-top: -10px;
+.job {
+    margin: 3% 3%;
+    padding: 1% 3%;
+    width: 51%;
+    background-image: linear-gradient(to bottom, #477FB9, #5EA6CB);
+    border-radius: 3px;
 }
 
 .jobtitletime {
     display: flex;
     justify-content: space-between;
+    align-items: end;
 }
-
-.jobtitle {
-    margin-top: 2%;
-    margin-left: 3%;
-    font-size: 22px;
-}
-
 .jobtime {
-    margin-right: 3%;
-    font-weight: bold;
-}
-
-.jobdetails {
-    line-height: 1.25rem;
-    margin: 0% 2% 1% 3%;
-    padding: 0% 0% 1% 1%;
-    box-shadow: -5px 5px rgba(0, 0, 0, 0.76);
-}
-
-.jobdetails span {
-    transition: font-weight 1s ease-in-out;
-}
-
-.jobdetails:hover span{
-    font-weight: bold;
-}
-
-
-/* Education */
-
-.education {
-    background-image: url(../Resources/lightbulb.jpg);
-    background-position: 100%;
-}
-
-.education h2{
-    font-size: 34px;
-    padding-top: 2%;
-   padding-left: 3%;
-   margin-bottom: 10px;
-   font-size: 34px;
-   margin-left: 0px;
-}
-
-.education h4{
     font-size: 14px;
-}
-
-.education h4 , .education h3 , .education p {
-    margin-left: 8px;
-}
-
-.border {
-  height: 80px;
-  width: 3px;
-  margin-top: 10px;
-  margin-left: 15px;
-  background-color: rgb(206 180 74);
-}
-
-.border2 {
-    height: 118px;
-    width: 3px;
-    margin-top: 10px;
-    margin-left: 15px;
-    background-color: rgb(206 180 74);
-}
-
-.border3 {
-    height: 120px;
-    width: 3px;
-    margin-top: 10px;
-    margin-left: 15px;
-    background-color: rgb(206 180 74);
-}
-
-.border4 {
-    height: 82px;
-    width: 3px;
-    margin-top: 10px;
-    margin-left: 15px;
-    background-color: rgb(206 180 74);
-}
-
-.teachinglicense , .psu , .tesl , .IBCert{
-    display: flex;
-}
-
-.degreetitle {
-    font-size: 20px;
-    margin-top: 8px;
-}
-
-.degreeinst {
-    font-size: 18px;
-}
-
-/* Skills and Interests */
-
-.skills {
-    display: grid;
-    max-height: fit-content;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.coding , .sports , .threeD {
-    width: 96%;
-    display: grid;
-    max-height: fit-content;
-}
-
-#lamppic {
-    max-height: 250px;
-    height: 50%;
-    justify-self: center;
-    align-self: center;
-}
-
-
-@media only screen and (max-width: 1510px) {
-  nav {
-    top: 0px;
-  }
-
-  .navbar {
-    top: 0px;
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-  }
-
-  .navbar h2:hover {
-      font-size: 24px;
-      margin-left: 3%;
-  }
-
-  .welcome {
-    margin-top: 40px;
-  }
-
-}
-
-@media only screen and (max-width: 1120px) {
-    .education {
-        background-image: url(../Resources/lightbulb.jpg);
-        background-position: left;
-    }
-
-}   
-
-@media only screen and (max-width: 756px) {
-    .employer {
-        margin-right: 150px;
-    }
-
-    .jobtextlogo img {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 505px) {
-    h4 {
-        font-size: 16px;
-    }
-
-    .welcome h3 {
-        font-size: 18px;
-    }
-
-    .jobtitle , .employer {
-        font-size: 18px;
-    }
+    margin: 5% 0% 1% 10%;
     
 }
 
-@media only screen and (max-width: 390px) {
+.jobtitle , .employer {
+    font-size: 20px;
+}
 
-    .experience h2 {
-        margin-left: 2px;
-    }
+.jobtitle {
+    margin-bottom: 1%;
+    color: whitesmoke;
+}
 
-    .experience h3 {
-        margin-left: 5px;
-    }
+.line {
+    display: inline-block;
+    margin-bottom: 10px;
+}
 
-    .experience p {
-        margin-left: 10px;
-    }
 
+/* sec 4: education */
+
+.education {
+    display: flex;
+    justify-content: space-around;
+}
+
+.edutitle {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.edubox {
+    width: 20%;
+    margin: 2%;
+    background-image: linear-gradient(to right, #477FB9, #5EA6CB);
+}
+
+.degreedate {
+    margin: 1%;
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+.degreetitle {
+    font-size: 22px;
+    color: whitesmoke;
+    margin-left: 5%;
+}
+
+.degreeinst {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+
+.degreelocation {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+
+.degreedetails {
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 700px) {
+
+   nav {
+    position: fixed;
+    background-color: whitesmoke;
+    width: 100vw;
+    height: fit-content;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-content: end;
+  }
+
+  .navbar a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .navbar h3:hover {
+    color: #477FB9;
+    text-decoration: none;
+  }
+
+  .navbar h3 {
+    margin: 3% 0% 2% 0%;
+  }
+
+  .name {
+    margin-top: 50px;
+  }
+
+  .headshot {
+    display: none;
+  }
+
+  .welcomebottom {
+    display: block;
+  }
+
+  .introbottom {
+    width: 90vw;
+  }
+
+  .welcomemiddle h2 {
+      text-align: center;
+  }
+
+  .welcomebottom h3 , .welcomebottom p{
+    margin-bottom: 2%;
+    margin-top: 3%;
+  }
+
+  .experience {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .experiencetop {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .experiencebottom {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .job {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .education {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .edubox {
+    width: 94vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .degreedate , .degreetitle , .degreeinst , .degreelocation, .degreedetails{
+    margin-left: 2%;
+}
 
 }

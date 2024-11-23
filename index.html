@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CV Website 2</title>
+    <title>Kamron Taber Teacher CV</title>
+    <!-- <link rel="stylesheet" href="../CV_Website/Resources/CV_Website.css"> -->
     <link rel="stylesheet" href="https://1837TR.github.io/CVWebsite/Resources/CV_Website.css">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,17 +38,17 @@
       </div>
     </div>
     <div class="welcomebottom">
-      <div class="age introbottom">
-        <h3>Age Groups</h3>
-        <p>Key Stage 1✅  Key Stage 2✅  Grades K-6✅  Adults✅</p>
+      <div class="curricula introbottom">
+        <h3>Curricula:</h3>
+        <p>IB,  Cambridge, Curriculum Design</p>
       </div>
       <div class="subject introbottom">
-        <h3>Subjects</h3>
-        <p>Global<span id="invisible">_</span>Perspectives✅  Math✅  Science✅  Health✅  P.E.✅  Film<span id="invisible">_</span>Editing✅  English✅  Reading<span id="invisible">_</span>Support✅</p>
+        <h3>Subjects:</h3>
+        <p>Global Perspectives, English, Video Editing, Math, Science, Art, Health, P.E., Reading Support</p>
       </div>
-      <div class="curricula introbottom">
-        <h3>Curricula</h3>
-        <p>Curriculum<span id="invisible">_</span>Design✅  IB✅  Cambridge✅</p>
+      <div class="age introbottom">
+        <h3>Age Groups:</h3>
+        <p>Key Stage 1,  Key Stage 2,  Grades K-6,  Adults</p>
       </div>
     </div>
   </div>
@@ -164,6 +165,17 @@
      </p>
     </div>
   </div>
+</div>
+<div class="contacttitle" id="Contact">
+  <h2>Contact</h2>
+</div>
+<div class="contact">
+  <form id="contactform" action="CVWebsite.php" method="post">
+    <input type="text" id="schoolname" name="schoolname" placeholder="School / Institution Name" required>
+    <input type="email" id="email" name="email" placeholder="Email" required>
+    <textarea id="message" name="message" placeholder="Message" maxlength="2000" minlength="10" style="width: 450px; height: 100px" required></textarea>
+    <button>Send</button>
+  </form>
 </div>
   </body>
 </html>

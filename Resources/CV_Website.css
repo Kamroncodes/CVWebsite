@@ -73,7 +73,7 @@ body {
 
 /* opening: summary & headshot */
 
-.welcometop , .welcomebottom{
+.welcometop {
     flex-direction: row;
     display: flex;
     justify-content: space-around;
@@ -128,7 +128,7 @@ body {
 .welcomebottom {
     align-items: start;
     height: fit-content;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .welcomemiddle {
@@ -139,19 +139,23 @@ body {
 
 .welcomebottom h3 {
     font-size: 24px;
+    margin-bottom: 12px; 
+    margin-top: 12px;
 }
 
 .welcomebottom p {
     font-weight: bold;
     font-size: 18px;
+    margin: 14px 8px;
 }
 
 .introbottom {
     margin: 0% 1% 0% 1%;
-    padding: 1% 2% 0% 2%;
+    padding: 0.5% 2% 0% 2%;
     color: black;
-    width: 20vw;
+    width: 95vw;
     line-height: 2rem;
+    display: flex;
 }
 
 .introbottom p{
@@ -348,4 +352,31 @@ body {
     margin-left: 2%;
 }
 
+}
+
+/* Contact */
+
+.contacttitle {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+}
+
+form {
+  justify-self: center;
+  margin: 0 0 50px 0;
+  padding: 50px;
+  background-color: #477FB9;
+}
+
+input, button {
+  display: block;
+  margin: 2% 0%;
+  font-family: 'ubuntu', sans-serif;
+}
+
+#message {
+  padding: 0;
+  overflow: auto;
+  font-family: 'ubuntu', sans-serif;
 }

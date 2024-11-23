@@ -272,7 +272,7 @@ body {
   justify-items: center;
   margin: 0 0 50px 0;
   padding: 50px;
-  background-color: #477FB9;
+  background-color: green;
 }
 
 #contactform::placeholder {

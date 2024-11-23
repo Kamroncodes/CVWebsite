@@ -169,7 +169,8 @@
   <h2>Contact</h2>
 </div>
 <div class="contact">
-  <form id="contactform" action="CVWebsite.php" method="post">
+  <form id="contactform" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="2f3a9fb6-ac5d-4290-84df-c45c5fa43917">
     <input type="text" id="schoolname" name="schoolname" placeholder="School / Institution Name" required>
     <input type="email" id="email" name="email" placeholder="Email" required>
     <textarea id="message" name="message" placeholder="Message" maxlength="2000" minlength="10" style="width: 450px; height: 100px" required></textarea>

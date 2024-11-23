@@ -80,6 +80,7 @@ body {
     margin-bottom: 1%;
     margin-top: 0%;
     width: 100vw;
+    height: 90vh;
 }
 
 .welcometop {
@@ -104,23 +105,26 @@ body {
 .introbox h3 {
     font-size: 24px;
     margin: 0px;
+    padding: 0 2% 2% 14.5%;
 }
 
 .introbox {
-    margin: 6% 8% 5% 13%;
-    padding: 0% 2% 2% 2%;
     color: whitesmoke;
     width: fit-content;
+    height: 100%;
 }
 
 .headshot {
     padding: 0%;
     background-color: rgba(0,0,0,0);
+    
 }
 
 .headshot img {
     background-color: rgba(0,0,0,0);
-    margin-right: 10%;
+    margin: 0;
+    object-fit: cover;
+    height: 75vh;
 }
 
 /* sec 2: at a glance */

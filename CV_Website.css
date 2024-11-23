@@ -174,10 +174,6 @@ body {
 
 /* sec 3: experience */
 
-.experience {
-    margin: 0% 3%;
-}
-
 .experiencetop , .experiencebottom {
     display: flex; 
 }

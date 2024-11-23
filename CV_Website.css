@@ -217,6 +217,7 @@ body {
 .education {
     display: flex;
     justify-content: space-around;
+    margin: 1%;
 }
 
 .edutitle {

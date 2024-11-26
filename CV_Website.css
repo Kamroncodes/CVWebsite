@@ -205,20 +205,20 @@ body {
 }
 
 #assumptionjobexpimg {
-  background-image: url("../CV_Website/Resources/AssumptionCollege.jpg");
+  background-image: url("Resources/AssumptionCollege.jpg");
   border-top: 5px solid #477FB9;
 }
 
 #sukujobexpimg {
-  background-image: url("../CV_Website/Resources/SukuSuku.jpg");
+  background-image: url("Resources/SukuSuku.jpg");
 }
 
 #upbeatjobexpimg {
-  background-image: url("../CV_Website/Resources/UpbeatInt1.jpg");
+  background-image: url("Resources/UpbeatInt1.jpg");
 }
 
 #franklinjobexpimg {
-  background-image: url("../CV_Website/Resources/Franklin.jpg");
+  background-image: url("Resources/Franklin.jpg");
 }
 
 .divindiv {
@@ -445,7 +445,7 @@ body {
 }
 
 .CVsec {
-  background-image: url("../CV_Website/Resources/greybackground.jpg");
+  background-image: url("Resources/greybackground.jpg");
   object-fit: contain;
   border-bottom: 5px solid #477FB9;
   border-top: 5px solid #477FB9;

@@ -7,7 +7,7 @@ const prevButton = document.getElementById('carouselbuttonleft');
 const index = document.getElementById('carouselindex');
 const indexNumbers = Array.from(index.children);
 
-// Getting Slide Width
+// Getting Slide Width 
 
 const slideSize = slides[0].getBoundingClientRect();
 const slideWidth = slideSize.width;

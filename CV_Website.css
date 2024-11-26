@@ -157,6 +157,7 @@ body {
 #videodiv video{
   width: 100vw;
   height: 99vh;
+  min-height: 700px;
   margin: 0;
   padding: 0;
   object-fit: cover;
@@ -223,6 +224,8 @@ body {
 
 .divindiv {
   padding: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .jobtitletime {
@@ -454,8 +457,7 @@ body {
 
 .CVsec embed{
   display: block;
-  justify-self: center;
-  margin-top: 50px;
+  margin: 50px auto 0;
 }
 
 .CVsec a{

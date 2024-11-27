@@ -37,7 +37,7 @@ function resetAutoScroll() {
 
 startAutoScroll();
 
-//Button Funciton
+//Button Function
 function nextSlide() {
    const currentSlide = track.querySelector('.currentslide');
    const currentIndex = index.querySelector('.currentindex');
@@ -88,16 +88,20 @@ prevButton.ontouchstart = prevSlide;
 
 const downloadCV = document.getElementsByClassName('CVcenter')[0];
 
-function buttonHoverPrev() {
+function isTouchDevice() { 
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0; 
+}
+
+ if (!isTouchDevice()) {
+ function buttonHoverPrev() {
    prevButton.style.color = 'white';
-};
+ };
 
 prevButton.onmouseover = buttonHoverPrev;
 
-
 function buttonLeavePrev() {
     prevButton.style.color = 'black';
-};
+ };
 
 prevButton.onmouseleave = buttonLeavePrev;
 
@@ -105,15 +109,17 @@ function buttonHoverNext() {
     nextButton.style.color = 'white';
  };
  
- nextButton.onmouseover = buttonHoverNext;
+nextButton.onmouseover = buttonHoverNext;
  
- function buttonLeaveNext() {
+function buttonLeaveNext() {
      nextButton.style.color = 'black';
  };
  
- nextButton.onmouseleave = buttonLeaveNext;
+nextButton.onmouseleave = buttonLeaveNext;
 
- function downloadCVHover() {
+};
+
+function downloadCVHover() {
     Element.style.cursor = 'pointer';
  };
 

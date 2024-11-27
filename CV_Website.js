@@ -58,7 +58,8 @@ function nextSlide() {
    resetAutoScroll();
 }
 
-nextButton.onclick = nextSlide
+nextButton.onclick = nextSlide;
+nextButton.ontouchstart = nextSlide;
 
 function prevSlide() {
     const currentSlide = track.querySelector('.currentslide');
@@ -80,7 +81,8 @@ function prevSlide() {
     resetAutoScroll();
 }
 
-prevButton.onclick = prevSlide
+prevButton.onclick = prevSlide;
+prevButton.ontouchstart = prevSlide;
 
 /* Buttons */
 
@@ -91,6 +93,7 @@ function buttonHoverPrev() {
 };
 
 prevButton.onmouseover = buttonHoverPrev;
+
 
 function buttonLeavePrev() {
     prevButton.style.color = 'black';

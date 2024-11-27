@@ -318,6 +318,7 @@ h1 {
 .carouselindexnumber {
   position: absolute;
   left: 50%;
+  bottom: -60px;
   transform: translateX(-50%);
   display: none;
   z-index: -1;

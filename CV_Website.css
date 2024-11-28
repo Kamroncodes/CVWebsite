@@ -462,7 +462,7 @@ h1 {
   }
 
   .landing-page__headshot {
-    justify-self: center;
+    justify-content: center;
   }
 
   .landing-page__text h1 , .landing-page__text h3{

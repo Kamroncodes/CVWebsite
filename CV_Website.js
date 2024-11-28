@@ -88,11 +88,6 @@ prevButton.ontouchstart = prevSlide;
 
 const downloadCV = document.getElementsByClassName('CVcenter')[0];
 
-function isTouchDevice() { 
-    return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0; 
-}
-
- if (!isTouchDevice()) {
  function buttonHoverPrev() {
    prevButton.style.color = 'white';
  };
@@ -104,6 +99,7 @@ function buttonLeavePrev() {
  };
 
 prevButton.onmouseleave = buttonLeavePrev;
+prevButton.ontouchend = buttonLeavePrev;
 
 function buttonHoverNext() {
     nextButton.style.color = 'white';
@@ -117,7 +113,6 @@ function buttonLeaveNext() {
  
 nextButton.onmouseleave = buttonLeaveNext;
 
-};
 
 function downloadCVHover() {
     Element.style.cursor = 'pointer';

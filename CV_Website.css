@@ -457,12 +457,20 @@ h1 {
 }
 
 @media only screen and (max-width: 670px) {
-  .landing-page__headshot img {
-    display: none;
+  .landing-page__top {
+    display: block;
+  }
+
+  .landing-page__headshot {
+    justify-self: center;
   }
 
   .landing-page__text h1 , .landing-page__text h3{
     margin: 6%;
+  }
+
+  .landing-page__text h3 {
+    margin-bottom: 0;
   }
 }
 
@@ -480,7 +488,6 @@ h1 {
     width: 90%;
     margin: 10px auto;
   }
-
 
 }
 
@@ -528,11 +535,12 @@ h1 {
   }
   
   #contactform {
-    padding: 3%;
+    padding: 6%;
+    margin-bottom: 20px;
    }
 
    #message {
-    width: 90vw;
+    width: 80vw;
    }
 }
 
@@ -541,4 +549,13 @@ h1 {
     padding: 0 10px;
     text-align: center;
    }
+
+   #message {
+    width: 70vw;
+   }
+
+   #contactform {
+    padding: 6% 12%;
+   }
+   
 }

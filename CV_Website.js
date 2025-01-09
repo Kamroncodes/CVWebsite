@@ -59,7 +59,6 @@ function nextSlide() {
 }
 
 nextButton.onclick = nextSlide;
-nextButton.ontouchstart = nextSlide;
 
 function prevSlide() {
     const currentSlide = track.querySelector('.currentslide');
@@ -82,7 +81,6 @@ function prevSlide() {
 }
 
 prevButton.onclick = prevSlide;
-prevButton.ontouchstart = prevSlide;
 
 /* Buttons */
 
